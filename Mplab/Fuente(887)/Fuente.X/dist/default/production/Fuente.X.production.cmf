@@ -1,0 +1,657 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 0 2007 2007 2 2
+$dist/default/production\Fuente.X.production.obj
+cinit CODE 0 15 15 24 2
+text1 CODE 0 39 39 176 2
+text2 CODE 0 533 533 10 2
+text3 CODE 0 4CA 4CA 23 2
+text4 CODE 0 43B 43B 34 2
+text5 CODE 0 3AD 3AD 3E 2
+text6 CODE 0 46F 46F 33 2
+text7 CODE 0 4ED 4ED 19 2
+text8 CODE 0 4A2 4A2 28 2
+text9 CODE 0 543 543 9 2
+text10 CODE 0 300 300 64 2
+text11 CODE 0 51E 51E 15 2
+text12 CODE 0 364 364 49 2
+text13 CODE 0 506 506 18 2
+text14 CODE 0 27D 27D 83 2
+idataCOMMON CODE 0 554 554 2 2
+maintext CODE 0 1AF 1AF CE 2
+cstackCOMMON COMMON 1 70 70 B 1
+cstackBANK0 BANK0 1 20 20 28 1
+intentry CODE 0 4 4 E 2
+bitbssCOMMON COMMON 1 3D8 7B 4 1
+bssBANK0 BANK0 1 48 48 10 1
+idataBANK0 CODE 0 556 556 2 2
+strings STRING 0 400 400 3B 2
+dataBANK0 BANK0 1 58 58 2 1
+dataCOMMON COMMON 1 7C 7C 2 1
+clrtext CODE 0 54C 54C 8 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5A-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 5A-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 3EB-3FF 2
+CONST 558-1FFF 2
+ENTRY 3-3 2
+ENTRY 3EB-3FF 2
+ENTRY 558-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 3EB-3FF 2
+CODE 558-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 3EB-3FF 2
+STRCODE 558-1FFF 2
+STRING 3-3 2
+STRING 3EB-3FF 2
+STRING 558-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Fuente.X.production.obj
+15 cinit CODE >724:C:\Users\quiqu\AppData\Local\Temp\s60o.
+15 cinit CODE >727:C:\Users\quiqu\AppData\Local\Temp\s60o.
+15 cinit CODE >785:C:\Users\quiqu\AppData\Local\Temp\s60o.
+1A cinit CODE >786:C:\Users\quiqu\AppData\Local\Temp\s60o.
+1B cinit CODE >787:C:\Users\quiqu\AppData\Local\Temp\s60o.
+20 cinit CODE >788:C:\Users\quiqu\AppData\Local\Temp\s60o.
+21 cinit CODE >792:C:\Users\quiqu\AppData\Local\Temp\s60o.
+26 cinit CODE >793:C:\Users\quiqu\AppData\Local\Temp\s60o.
+27 cinit CODE >794:C:\Users\quiqu\AppData\Local\Temp\s60o.
+2C cinit CODE >795:C:\Users\quiqu\AppData\Local\Temp\s60o.
+2D cinit CODE >814:C:\Users\quiqu\AppData\Local\Temp\s60o.
+2E cinit CODE >815:C:\Users\quiqu\AppData\Local\Temp\s60o.
+2F cinit CODE >816:C:\Users\quiqu\AppData\Local\Temp\s60o.
+30 cinit CODE >817:C:\Users\quiqu\AppData\Local\Temp\s60o.
+31 cinit CODE >818:C:\Users\quiqu\AppData\Local\Temp\s60o.
+34 cinit CODE >821:C:\Users\quiqu\AppData\Local\Temp\s60o.
+35 cinit CODE >827:C:\Users\quiqu\AppData\Local\Temp\s60o.
+35 cinit CODE >829:C:\Users\quiqu\AppData\Local\Temp\s60o.
+36 cinit CODE >830:C:\Users\quiqu\AppData\Local\Temp\s60o.
+4 intentry CODE >76:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+27D text14 CODE >76:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+27D text14 CODE >78:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+285 text14 CODE >79:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+28F text14 CODE >81:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+291 text14 CODE >83:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+295 text14 CODE >85:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2AD text14 CODE >87:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2AF text14 CODE >88:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2B0 text14 CODE >89:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2C6 text14 CODE >91:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2CA text14 CODE >94:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2CD text14 CODE >95:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2D2 text14 CODE >96:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2D2 text14 CODE >98:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2D6 text14 CODE >100:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2D9 text14 CODE >102:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2DD text14 CODE >103:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2DF text14 CODE >104:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2DF text14 CODE >105:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2E0 text14 CODE >107:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2E4 text14 CODE >108:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2E6 text14 CODE >109:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2E6 text14 CODE >110:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2E7 text14 CODE >112:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2EB text14 CODE >113:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2ED text14 CODE >114:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2ED text14 CODE >115:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2EE text14 CODE >118:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2F1 text14 CODE >120:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+2F3 text14 CODE >121:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+506 text13 CODE >5:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+509 text13 CODE >6:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+50B text13 CODE >7:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+50C text13 CODE >8:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+50D text13 CODE >9:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+50E text13 CODE >10:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+50E text13 CODE >12:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+510 text13 CODE >13:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+511 text13 CODE >14:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+512 text13 CODE >15:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+513 text13 CODE >16:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+513 text13 CODE >18:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+515 text13 CODE >19:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+516 text13 CODE >20:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+517 text13 CODE >21:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+518 text13 CODE >22:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+518 text13 CODE >24:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+51A text13 CODE >25:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+51B text13 CODE >26:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+51C text13 CODE >27:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+364 text12 CODE >32:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+367 text12 CODE >33:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+375 text12 CODE >35:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+37C text12 CODE >37:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+37F text12 CODE >39:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+386 text12 CODE >41:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+389 text12 CODE >43:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+390 text12 CODE >45:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+397 text12 CODE >47:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+39A text12 CODE >49:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+3A1 text12 CODE >51:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+3A4 text12 CODE >52:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+3AC text12 CODE >53:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+51E text11 CODE >56:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+51E text11 CODE >57:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+521 text11 CODE >58:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+527 text11 CODE >59:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+532 text11 CODE >60:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+300 text10 CODE >85:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+300 text10 CODE >86:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+30E text10 CODE >88:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+314 text10 CODE >90:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+317 text10 CODE >91:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+31E text10 CODE >93:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+321 text10 CODE >94:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+328 text10 CODE >96:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+32E text10 CODE >98:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+331 text10 CODE >99:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+338 text10 CODE >100:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+33B text10 CODE >102:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+342 text10 CODE >103:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+348 text10 CODE >105:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+34F text10 CODE >106:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+355 text10 CODE >108:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+35F text10 CODE >109:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+363 text10 CODE >110:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+543 text9 CODE >71:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+546 text9 CODE >72:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+547 text9 CODE >73:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+54B text9 CODE >74:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4A2 text8 CODE >62:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4A2 text8 CODE >63:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4A5 text8 CODE >64:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4B1 text8 CODE >65:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4C5 text8 CODE >66:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4C9 text8 CODE >64:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4ED text7 CODE >76:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4ED text7 CODE >77:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4F0 text7 CODE >78:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4F4 text7 CODE >79:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+4F9 text7 CODE >80:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+500 text7 CODE >81:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+505 text7 CODE >82:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\drv_lcd.c
+46F text6 CODE >176:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+46F text6 CODE >178:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+47C text6 CODE >179:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+47F text6 CODE >184:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+480 text6 CODE >185:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+481 text6 CODE >186:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+482 text6 CODE >187:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+483 text6 CODE >189:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+487 text6 CODE >190:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+488 text6 CODE >192:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+48C text6 CODE >193:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+48D text6 CODE >195:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+491 text6 CODE >197:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+492 text6 CODE >181:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+4A0 text6 CODE >197:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+4A1 text6 CODE >199:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+3AD text5 CODE >6:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3AD text5 CODE >14:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3B1 text5 CODE >15:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3B5 text5 CODE >16:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3B7 text5 CODE >17:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3B9 text5 CODE >18:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3C0 text5 CODE >19:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3C4 text5 CODE >17:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3C5 text5 CODE >22:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3CC text5 CODE >23:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3D4 text5 CODE >24:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3DA text5 CODE >25:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3DB text5 CODE >27:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3E2 text5 CODE >28:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+3E6 text5 CODE >30:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+43B text4 CODE >6:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+43B text4 CODE >13:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+441 text4 CODE >14:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+443 text4 CODE >15:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+445 text4 CODE >16:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+44C text4 CODE >17:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+450 text4 CODE >15:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+451 text4 CODE >20:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+459 text4 CODE >21:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+45F text4 CODE >22:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+466 text4 CODE >23:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+46A text4 CODE >25:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+4CA text3 CODE >15:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+4CA text3 CODE >43:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+4CE text3 CODE >45:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+4D0 text3 CODE >46:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+4D6 text3 CODE >47:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+4DD text3 CODE >48:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+4E4 text3 CODE >49:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+4E8 text3 CODE >52:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+533 text2 CODE >8:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\isdigit.c
+536 text2 CODE >14:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\isdigit.c
+39 text1 CODE >492:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+3C text1 CODE >533:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+40 text1 CODE >536:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+52 text1 CODE >538:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+56 text1 CODE >541:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+61 text1 CODE >542:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+62 text1 CODE >546:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+64 text1 CODE >548:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+65 text1 CODE >597:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+73 text1 CODE >598:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+77 text1 CODE >600:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+8C text1 CODE >601:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+A3 text1 CODE >602:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+B1 text1 CODE >635:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+C8 text1 CODE >1259:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+D6 text1 CODE >1261:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+D8 text1 CODE >1262:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+DC text1 CODE >1263:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+E1 text1 CODE >1305:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+E7 text1 CODE >1306:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+100 text1 CODE >1305:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+108 text1 CODE >1345:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+110 text1 CODE >1346:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+116 text1 CODE >1381:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+127 text1 CODE >1382:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+135 text1 CODE >1384:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+139 text1 CODE >1428:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+13D text1 CODE >1430:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+148 text1 CODE >1431:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+152 text1 CODE >1438:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+156 text1 CODE >1439:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+161 text1 CODE >1472:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+165 text1 CODE >1474:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+16C text1 CODE >1489:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+19C text1 CODE >1524:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+1A7 text1 CODE >1474:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+1A8 text1 CODE >1538:D:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
+1AF maintext CODE >123:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1AF maintext CODE >125:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1B3 maintext CODE >126:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1B6 maintext CODE >127:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1BA maintext CODE >128:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1BC maintext CODE >129:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1BF maintext CODE >130:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1C2 maintext CODE >131:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1C5 maintext CODE >132:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1C8 maintext CODE >133:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1CB maintext CODE >135:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1CF maintext CODE >136:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1D1 maintext CODE >139:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1D4 maintext CODE >141:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1DA maintext CODE >143:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1DF maintext CODE >144:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1E4 maintext CODE >145:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1EF maintext CODE >148:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1F3 maintext CODE >149:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1F7 maintext CODE >152:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1F9 maintext CODE >153:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1FA maintext CODE >154:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+1FE maintext CODE >157:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+200 maintext CODE >158:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+202 maintext CODE >162:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+210 maintext CODE >163:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+215 maintext CODE >164:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+216 maintext CODE >165:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+237 maintext CODE >166:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+244 maintext CODE >167:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+24F maintext CODE >168:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+262 maintext CODE >169:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+270 maintext CODE >170:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+27B maintext CODE >171:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+27C maintext CODE >160:D:\Dropbox\DOCUMENTOS\Electronica\Proyectos\Fuente de alimentación\Mplab\Fuente.X\main.c
+54C clrtext CODE >801:C:\Users\quiqu\AppData\Local\Temp\s60o.
+54C clrtext CODE >802:C:\Users\quiqu\AppData\Local\Temp\s60o.
+54D clrtext CODE >803:C:\Users\quiqu\AppData\Local\Temp\s60o.
+54D clrtext CODE >804:C:\Users\quiqu\AppData\Local\Temp\s60o.
+54E clrtext CODE >805:C:\Users\quiqu\AppData\Local\Temp\s60o.
+54F clrtext CODE >806:C:\Users\quiqu\AppData\Local\Temp\s60o.
+550 clrtext CODE >807:C:\Users\quiqu\AppData\Local\Temp\s60o.
+551 clrtext CODE >808:C:\Users\quiqu\AppData\Local\Temp\s60o.
+552 clrtext CODE >809:C:\Users\quiqu\AppData\Local\Temp\s60o.
+553 clrtext CODE >810:C:\Users\quiqu\AppData\Local\Temp\s60o.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+___lwmod@counter 2D 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+lcd_print@cs 27 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__Hspace_0 2009 0 ABS 0 - -
+__Hspace_1 3DC 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+_Lcd_Port A0C 0 CODE 0 text13 dist/default/production\Fuente.X.production.obj
+isr@rbif 77 0 COMMON 1 cstackCOMMON dist/default/production\Fuente.X.production.obj
+isr@t0if 79 0 COMMON 1 cstackCOMMON dist/default/production\Fuente.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__end_of_Lcd_Port A3C 0 CODE 0 text13 dist/default/production\Fuente.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_IOCB 96 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TMR0 1 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TMR2 11 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+_main 35E 0 CODE 0 maintext dist/default/production\Fuente.X.production.obj
+_paso 59 0 BANK0 1 dataBANK0 dist/default/production\Fuente.X.production.obj
+_pwmb 48 0 BANK0 1 bssBANK0 dist/default/production\Fuente.X.production.obj
+_pwmg 7C 0 COMMON 1 dataCOMMON dist/default/production\Fuente.X.production.obj
+_pwmr 7D 0 COMMON 1 dataCOMMON dist/default/production\Fuente.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+start 24 0 CODE 0 init C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+Lcd_Port@a 20 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+_lcd_setCursor 9DA 0 CODE 0 text7 dist/default/production\Fuente.X.production.obj
+__pbitbssCOMMON 3D8 -35D COMMON 1 bitbssCOMMON dist/default/production\Fuente.X.production.obj
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+__end_of_lcd_clear A66 0 CODE 0 text11 dist/default/production\Fuente.X.production.obj
+__end_of_lcd_print 994 0 CODE 0 text8 dist/default/production\Fuente.X.production.obj
+__end_of_lcd_putch A98 0 CODE 0 text9 dist/default/production\Fuente.X.production.obj
+__end_of_lcd_write 75A 0 CODE 0 text12 dist/default/production\Fuente.X.production.obj
+__size_of_lcd_clear 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+intlevel1 0 0 CODE 0 functab C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+intlevel2 0 0 CODE 0 functab C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+intlevel3 0 0 CODE 0 functab C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+intlevel4 0 0 CODE 0 functab C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+intlevel5 0 0 CODE 0 functab C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+__size_of_lcd_print 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__size_of_lcd_putch 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__size_of_lcd_write 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__pidataCOMMON AA8 0 CODE 0 idataCOMMON dist/default/production\Fuente.X.production.obj
+_lcd_clear A3C 0 CODE 0 text11 dist/default/production\Fuente.X.production.obj
+_lcd_print 944 0 CODE 0 text8 dist/default/production\Fuente.X.production.obj
+_lcd_putch A86 0 CODE 0 text9 dist/default/production\Fuente.X.production.obj
+_lcd_write 6C8 0 CODE 0 text12 dist/default/production\Fuente.X.production.obj
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+_ANSELH 189 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_encpwmmode 58 0 BANK0 1 dataBANK0 dist/default/production\Fuente.X.production.obj
+__end_of___wmul 9DA 0 CODE 0 text3 dist/default/production\Fuente.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+___lwmod@divisor 28 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__end_of___lwdiv 7D6 0 CODE 0 text5 dist/default/production\Fuente.X.production.obj
+__end_of___lwmod 8DE 0 CODE 0 text4 dist/default/production\Fuente.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+lcd_setCursor@fila 25 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+_INTCON B 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_OPTION_REG 81 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_dpowers 820 0 STRING 0 strings dist/default/production\Fuente.X.production.obj
+___lwdiv@quotient 25 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__size_of_lcd_setCursor 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+___lwmod@dividend 2A 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__end_of_pwmupdate 944 0 CODE 0 text6 dist/default/production\Fuente.X.production.obj
+start_initialization 2A 0 CODE 0 cinit dist/default/production\Fuente.X.production.obj
+__size_of_pwmupdate 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_renc_a_ant 3DB -35D COMMON 1 bitbssCOMMON dist/default/production\Fuente.X.production.obj
+_renc_b_ant 3DA -35D COMMON 1 bitbssCOMMON dist/default/production\Fuente.X.production.obj
+clear_ram0 A98 0 CODE 0 clrtext dist/default/production\Fuente.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+_pwmupdate 8DE 0 CODE 0 text6 dist/default/production\Fuente.X.production.obj
+__end_of_lcd_setCursor A0C 0 CODE 0 text7 dist/default/production\Fuente.X.production.obj
+_isdigit$624 20 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 72 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 81E 0 STRING 0 strings dist/default/production\Fuente.X.production.obj
+___lwdiv@counter 27 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf 35E 0 CODE 0 text1 dist/default/production\Fuente.X.production.obj
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__end_of_isdigit A86 0 CODE 0 text2 dist/default/production\Fuente.X.production.obj
+__Lcinit 2A 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+_PORTAbits 5 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PORTBbits 6 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PORTCbits 7 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PORTDbits 8 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PORTEbits 9 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___wmul 994 0 CODE 0 text3 dist/default/production\Fuente.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PR2 92 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__S0 2009 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 4FA 0 CODE 0 text14 dist/default/production\Fuente.X.production.obj
+__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+sprintf@val 3B 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__end_of_isr 600 0 CODE 0 text14 dist/default/production\Fuente.X.production.obj
+_lcd_init 600 0 CODE 0 text10 dist/default/production\Fuente.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 800 0 STRING 0 strings dist/default/production\Fuente.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+__pdataBANK0 58 0 BANK0 1 dataBANK0 dist/default/production\Fuente.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_lcd_init 6C8 0 CODE 0 text10 dist/default/production\Fuente.X.production.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PIE1bits 8C 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+sprintf@flag 3A 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+sprintf@prec 39 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__ptext10 600 0 CODE 0 text10 dist/default/production\Fuente.X.production.obj
+__ptext11 A3C 0 CODE 0 text11 dist/default/production\Fuente.X.production.obj
+__ptext12 6C8 0 CODE 0 text12 dist/default/production\Fuente.X.production.obj
+__ptext13 A0C 0 CODE 0 text13 dist/default/production\Fuente.X.production.obj
+__ptext14 4FA 0 CODE 0 text14 dist/default/production\Fuente.X.production.obj
+___lwdiv 75A 0 CODE 0 text5 dist/default/production\Fuente.X.production.obj
+___lwmod 876 0 CODE 0 text4 dist/default/production\Fuente.X.production.obj
+__pmaintext 35E 0 CODE 0 maintext dist/default/production\Fuente.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+___lwdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+lcd_print@s 24 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+stacklo 0 0 ABS 0 - C:\Users\quiqu\AppData\Local\Temp\s60o.obj
+_vector 49 0 BANK0 1 bssBANK0 dist/default/production\Fuente.X.production.obj
+__end_of__stringtab 820 0 STRING 0 strings dist/default/production\Fuente.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+lcd_putch@c 23 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+lcd_setCursor@columna 23 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__Lend_init 24 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 6A 0 CODE 0 cinit dist/default/production\Fuente.X.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+?___lwdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+?___lwmod 28 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+lcd_write@c 22 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__ptext1 72 0 CODE 0 text1 dist/default/production\Fuente.X.production.obj
+__ptext2 A66 0 CODE 0 text2 dist/default/production\Fuente.X.production.obj
+__ptext3 994 0 CODE 0 text3 dist/default/production\Fuente.X.production.obj
+__ptext4 876 0 CODE 0 text4 dist/default/production\Fuente.X.production.obj
+__ptext5 75A 0 CODE 0 text5 dist/default/production\Fuente.X.production.obj
+__ptext6 8DE 0 CODE 0 text6 dist/default/production\Fuente.X.production.obj
+__ptext7 9DA 0 CODE 0 text7 dist/default/production\Fuente.X.production.obj
+__ptext8 944 0 CODE 0 text8 dist/default/production\Fuente.X.production.obj
+__ptext9 A86 0 CODE 0 text9 dist/default/production\Fuente.X.production.obj
+_sprintf 72 0 CODE 0 text1 dist/default/production\Fuente.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 38 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+sprintf@sp 3F 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+_isdigit A66 0 CODE 0 text2 dist/default/production\Fuente.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__end_of__initialization 6A 0 CODE 0 cinit dist/default/production\Fuente.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__pidataBANK0 AAC 0 CODE 0 idataBANK0 dist/default/production\Fuente.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Fuente.X.production.obj
+_TXSTAbits 98 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__size_of_Lcd_Port 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+sprintf@c 40 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+sprintf@f 2E 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__end_of_main 4FA 0 CODE 0 maintext dist/default/production\Fuente.X.production.obj
+isdigit@c 21 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+_ANSEL 188 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__end_of_dpowers 834 0 STRING 0 strings dist/default/production\Fuente.X.production.obj
+?_sprintf 2E 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PORTD 8 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_PORTE 9 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_RCREG 1A 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_T2CON 12 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TRISD 88 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TRISE 89 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+_TXREG 19 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Fuente.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\Fuente.X.production.obj
+sprintf@width 3D 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__initialization 2A 0 CODE 0 cinit dist/default/production\Fuente.X.production.obj
+__pbssBANK0 48 0 BANK0 1 bssBANK0 dist/default/production\Fuente.X.production.obj
+__pdataCOMMON 7C 0 COMMON 1 dataCOMMON dist/default/production\Fuente.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Fuente.X.production.obj
+__pstrings 800 0 STRING 0 strings dist/default/production\Fuente.X.production.obj
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\Fuente.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text4 0 43B 876 11D 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 3A 1
+intentry 0 4 8 3E7 2
+reset_vec 0 0 0 3 2
+strings 0 400 800 3B 2
+config 0 2007 400E 2 2

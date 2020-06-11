@@ -1,0 +1,84 @@
+Numero de lamina: 155
+Gramos de lamina a comprar: 2464
+Numero de carrete: 155
+Frecuencia (Hz): 50
+Densidad de corriente (A/mm2): 3
+Rendimiento: 0,9
+Rendimiento Real: 0,88
+Coseno Fi: 0,8
+Constante Bobinado (Mano/Maquina): 2
+Induccion Bmax (Gauss): 11000
+Potencia Secundario Total (W): 115
+Seccion del nucleo (cm2): 13,72
+Factor de Apilado: 0,95
+Perdida (W): 15,78
+Perdida de la chapa (W/Kg): 3
+Constante Calculo Sn (k'): 1,35
+
+
+Caracteristicas del bobinado primario:
+Voltaje (V): 220
+Corriente (A): 0,73
+Potencia (W): 159,72
+Calibre (AWG): 23
+Diametro (mm): 0,57
+Seccion (mm2): 0,26
+Vueltas: 643
+Espiras por Capa: 99
+Capas: 7
+Longitud (m): 110,41
+Largo Medio por Vuelta (mm): 168,05
+Resistencia (ohm): 6,23
+Perdida (W): 3,28
+Gramos a comprar: 253
+
+
+Caracteristicas del bobinado secundario 1:
+Voltaje (V): 22
+Corriente (A): 2,2
+Potencia (W): 48,4
+Calibre (AWG): 19
+Diametro (mm): 0,91
+Seccion (mm2): 0,65
+Vueltas: 68
+Espiras por Capa: 62
+Capas: 2
+Longitud (m): 12,63
+Largo Medio por Vuelta (mm): 191,40
+Resistencia (ohm): 0,33
+Perdida (W): 1,60
+Gramos a comprar: 73
+
+
+Caracteristicas del bobinado secundario 2:
+Voltaje (V): 24
+Corriente (A): 2,2
+Potencia (W): 52,8
+Calibre (AWG): 19
+Diametro (mm): 0,91
+Seccion (mm2): 0,65
+Vueltas: 75
+Espiras por Capa: 62
+Capas: 2
+Longitud (m): 14,83
+Largo Medio por Vuelta (mm): 205,98
+Resistencia (ohm): 0,39
+Perdida (W): 1,88
+Gramos a comprar: 86
+
+
+Caracteristicas del bobinado secundario 3:
+Voltaje (V): 7
+Corriente (A): 2
+Potencia (W): 14
+Calibre (AWG): 19
+Diametro (mm): 0,91
+Seccion (mm2): 0,65
+Vueltas: 22
+Espiras por Capa: 62
+Capas: 1
+Longitud (m): 4,56
+Largo Medio por Vuelta (mm): 216,92
+Resistencia (ohm): 0,12
+Perdida (W): 0,48
+Gramos a comprar: 26
